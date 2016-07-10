@@ -1,0 +1,10 @@
+// Utilities :: Is Map
+
+@function _is-map($map: false) {
+  @if ($map and typeof($map) == "map") {
+    @return true;
+  }
+  @else {
+    @return false;
+  }
+}

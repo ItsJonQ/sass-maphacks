@@ -1,0 +1,13 @@
+// Utilities :: First
+
+// Dependencies
+@import "./is-map";
+
+@function _first($map: false) {
+  @if ($map) {
+    @return nth($map, 1);
+  }
+  @else {
+    @warn "The map passed is not valid.";
+  }
+};

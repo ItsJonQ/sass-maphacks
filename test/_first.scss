@@ -1,0 +1,19 @@
+// _first :: Test
+
+@import "true";
+@import "./scss/utilities/first";
+
+@include test-module("_first") {
+
+  @include test("should return the first item of a map") {
+    $map: (
+      a: first,
+      b: second
+    );
+
+    $test: _first($map);
+    $expect: a first;
+
+    @include assert-equal($test, $expect, "a first");
+  }
+}

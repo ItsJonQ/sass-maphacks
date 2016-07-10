@@ -29,7 +29,7 @@ sass.render({
 
 // Minified .css compile
 sass.render({
-  file: './scss/pack/_'+file+'.scss',
+  file: './scss/_'+file+'.scss',
   includePaths: includePaths,
   outputStyle: 'compressed'
 }, function(error, result) {
