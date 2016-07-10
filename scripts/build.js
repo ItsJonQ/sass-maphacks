@@ -10,7 +10,7 @@ var includePaths = [];
 
 // Default .css compile
 sass.render({
-  file: './scss/pack/_'+file+'.scss',
+  file: './scss/_'+file+'.scss',
   includePaths: includePaths
 }, function(error, result) {
   if (error) {

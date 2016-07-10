@@ -1,7 +1,7 @@
 {
-  "name": "seed-maphacks",
-  "version": "1.0.0",
-  "description": "",
+  "name": "sass-maphacks",
+  "version": "0.0.1",
+  "description": "A underscore/lodash like utility library for Sass maps",
   "main": "index.js",
   "homepage": "",
   "scripts": {
@@ -15,23 +15,20 @@
     "url": ""
   },
   "keywords": [
-    "bem",
     "css",
-    "design",
     "functional",
-    "itcss",
-    "modular",
-    "oocss",
+    "lodash",
     "performance",
-    "seed",
-    "seed-pack",
-    "scss"
+    "sass",
+    "scss",
+    "underscore",
+    "utility"
   ],
   "authors": [
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=0.10.1"
+    "node": ">=4"
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",

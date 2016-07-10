@@ -3,7 +3,7 @@
 var sass = require('node-sass');
 
 sass.render({
-  file: './scss/pack/_seed-maphacks.scss'
+  file: './scss/_sass-maphacks.scss'
 }, function(error, result) {
   if (error) {
     console.error(error);
