@@ -13,5 +13,15 @@
     "bower_components",
     "test.js"
   ],
+  "keywords": [
+    "css",
+    "functional",
+    "lodash",
+    "performance",
+    "sass",
+    "scss",
+    "underscore",
+    "utility"
+  ],
   "version": "0.0.1"
 }
