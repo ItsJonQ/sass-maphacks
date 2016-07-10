@@ -3,9 +3,10 @@
   "description": "A underscore/lodash like utility library for Sass maps",
   "main": "index.js",
   "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/ItsJonQ/sass-maphacks",
   "ignore": [
     "**/.*",
     "node_modules",

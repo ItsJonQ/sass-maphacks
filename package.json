@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A underscore/lodash like utility library for Sass maps",
   "main": "index.js",
-  "homepage": "",
+  "homepage": "https://github.com/itsjonq/sass-maphacks",
   "scripts": {
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
@@ -12,8 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/itsjonq/sass-maphacks.git"
   },
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
   "keywords": [
     "css",
     "functional",
@@ -24,9 +27,10 @@
     "underscore",
     "utility"
   ],
-  "authors": [
-  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsjonq/sass-maphacks/issues"
+  },
   "engines": {
     "node": ">=4"
   },
