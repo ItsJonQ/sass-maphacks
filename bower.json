@@ -1,0 +1,16 @@
+{
+  "name": "seed-maphacks",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test.js"
+  ],
+  "version": "1.0.0"
+}

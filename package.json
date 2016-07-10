@@ -1,0 +1,40 @@
+{
+  "name": "seed-maphacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "",
+  "scripts": {
+    "banner": "node ./scripts/banner.js",
+    "build": "npm run build:main && npm run banner",
+    "build:main": "node ./scripts/build.js",
+    "test": "node ./scripts/test.js && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "seed-pack",
+    "scss"
+  ],
+  "authors": [
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.8.0"
+  }
+}
