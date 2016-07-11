@@ -1,6 +1,6 @@
-// Functions :: Is Map
+// _isMap
 
-@function _is-map($map: false) {
+@function _isMap($map: false) {
   @if ($map and typeof($map) == "map") {
     @return true;
   }
