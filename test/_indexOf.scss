@@ -1,0 +1,32 @@
+// _indexOf :: Test
+
+@import "true";
+@import "./scss/functions/indexOf";
+
+@include test-module("_indexOf") {
+  @include test("should return index of 1") {
+    $map: (
+      a: first,
+      b: second,
+      c: third
+    );
+
+    $test: _indexOf($map, a);
+    $expect: 1;
+
+    @include assert-equal($test, $expect, "1");
+  }
+
+  @include test("should return index of false if invalid") {
+    $map: (
+      a: first,
+      b: second,
+      c: third
+    );
+
+    $test: _indexOf($map, d);
+    $expect: false;
+
+    @include assert-equal($test, $expect, "false");
+  }
+}

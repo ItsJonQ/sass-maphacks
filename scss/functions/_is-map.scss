@@ -1,4 +1,4 @@
-// Utilities :: Is Map
+// Functions :: Is Map
 
 @function _is-map($map: false) {
   @if ($map and typeof($map) == "map") {

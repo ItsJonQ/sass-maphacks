@@ -1,7 +1,7 @@
 // _first :: Test
 
 @import "true";
-@import "./scss/utilities/first";
+@import "./scss/functions/first";
 
 @include test-module("_first") {
 

@@ -1,7 +1,4 @@
-// Utilities :: First
-
-// Dependencies
-@import "./is-map";
+// Functions :: _first
 
 @function _first($map: false) {
   @if ($map) {

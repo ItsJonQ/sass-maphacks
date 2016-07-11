@@ -1,0 +1,26 @@
+// Functions :: _indexOf
+
+@function _indexOf($map: false, $key: false) {
+  // Return if $map or $key is invalid
+  @if $map == false or $key == false {
+    @return false;
+  }
+  // Starting index
+  $index: 1;
+  // Get all the keys in the map
+  $keys: map-keys($map);
+  // Loop through the keys
+  @each $k in $keys {
+    // Return the index of the matching key
+    @if $k == $key {
+      @return $index;
+    }
+    @else {
+      // Increment the index
+      $index: $index + 1;
+      @if $index == length($map) {
+        @return false;
+      }
+    }
+  }
+};
