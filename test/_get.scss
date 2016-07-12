@@ -1,0 +1,23 @@
+// _get :: Test
+
+@import "true";
+@import "./scss/functions/get";
+
+@include test-module("_get") {
+
+  @include test("should get value of nested map") {
+    $map: (
+      a: 1,
+      b: (
+        c: 2,
+        d: 3
+      )
+    );
+
+    $test: _get($map, b, c);
+    $expect: 2;
+
+    @include assert-equal($test, $expect, "2");
+  }
+}
+

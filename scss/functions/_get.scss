@@ -1,0 +1,9 @@
+// Functions :: _get
+// Source:
+// https://www.sitepoint.com/extra-map-functions-sass/
+@function _get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
