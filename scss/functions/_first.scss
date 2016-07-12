@@ -2,7 +2,8 @@
 
 @function _first($map: false) {
   @if ($map) {
-    @return nth($map, 1);
+    $keys: map-keys($map);
+    @return map-get($map, nth($keys, 1));
   }
   @else {
     @warn "The map passed is not valid.";

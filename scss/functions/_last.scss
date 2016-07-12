@@ -1,0 +1,11 @@
+// Functions :: _last
+
+@function _last($map: false) {
+  @if ($map) {
+    $keys: map-keys($map);
+    @return map-get($map, nth($keys, length($keys)));
+  }
+  @else {
+    @warn "The map passed is not valid.";
+  }
+};

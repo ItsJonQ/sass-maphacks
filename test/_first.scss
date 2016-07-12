@@ -12,7 +12,7 @@
     );
 
     $test: _first($map);
-    $expect: a first;
+    $expect: first;
 
     @include assert-equal($test, $expect, "a first");
   }
