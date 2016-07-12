@@ -14,6 +14,6 @@
     $test: _first($map);
     $expect: first;
 
-    @include assert-equal($test, $expect, "a first");
+    @include assert-equal($test, $expect, "first");
   }
 }

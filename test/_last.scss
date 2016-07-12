@@ -1,0 +1,20 @@
+// _last :: Test
+
+@import "true";
+@import "./scss/functions/last";
+
+@include test-module("_last") {
+
+  @include test("should return the last item of a map") {
+    $map: (
+      a: first,
+      b: second
+    );
+
+    $test: _last($map);
+    $expect: second;
+
+    @include assert-equal($test, $expect, "second");
+  }
+}
+
