@@ -35,10 +35,24 @@ Once that is setup, simply `@import` *sass-maphacks* as needed in your `.scss` f
 If you wish to manually import and use indivdual functions in your code base (instead of importing all the `sass-maphacks` things), you can do the following:
 
 ```scss
+// Input (awesome-class.scss)
 @import "sass-maphacks/get";
+
+$color: (
+  primary: (
+    blue: blue,
+    green: green
+  ),
+  text: black
+);
 
 .my-awesome-class {
   color: _get($color, primary, blue);
+}
+
+// Output (awesome-class.css)
+.my-awesome-class {
+  color: blue;
 }
 ```
 
