@@ -1,5 +1,7 @@
 # sass-maphacks [![Build Status](https://travis-ci.org/ItsJonQ/sass-maphacks.svg?branch=master)](https://travis-ci.org/ItsJonQ/sass-maphacks) [![npm version](https://badge.fury.io/js/sass-maphacks.svg)](https://badge.fury.io/js/sass-maphacks) ![Coverage](https://img.shields.io/badge/coverage-100%25-green.svg) [![Dependency Status](https://david-dm.org/itsjonq/sass-maphacks.svg)](https://david-dm.org/itsjonq/sass-maphacks)
 
+An Underscore/Lodash-like utility library for Sass maps
+
 ## Install
 ```
 npm install sass-maphacks --save-dev
