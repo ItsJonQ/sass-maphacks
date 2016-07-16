@@ -1,0 +1,19 @@
+// Test :: _values
+
+@import "true";
+@import "./scss/sass-maphacks/values";
+
+@include test-module("_values") {
+
+  @include test("should get values from map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _values($map);
+    $expect: 1, 2;
+
+    @include assert-equal($test, $expect, "1, 2");
+  }
+}

@@ -1,0 +1,10 @@
+// _isList
+
+@function _isList($list: false) {
+  @if ($list and type-of($list) == "list") {
+    @return true;
+  }
+  @else {
+    @return false;
+  }
+}

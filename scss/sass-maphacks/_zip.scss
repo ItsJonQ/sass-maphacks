@@ -1,0 +1,32 @@
+// _zip
+// Source:
+// https://www.sitepoint.com/extra-map-functions-sass/
+
+@function _zip($keys, $values) {
+  @if type-of($keys) != "list" {
+    @error "_zip: The first argument must be a list.";
+  }
+  @if type-of($values) != "list" {
+    @error "_zip: The second argument must be list.";
+  }
+
+  $l-keys: length($keys);
+  $l-values: length($values);
+  $min: min($l-keys, $l-values);
+  $map: ();
+
+  @if $l-keys != $l-values {
+    @warn "There are #{$l-keys} key(s) for #{$l-values} value(s) in the map for `map-zip`. "
+    + "Resulting map will only have #{$min} pairs.";
+  }
+
+  @if $min == 0 {
+    @return $map;
+  }
+
+  @for $i from 1 through $min {
+    $map: map-merge($map, (nth($keys, $i): nth($values, $i)));
+  }
+
+  @return $map;
+}

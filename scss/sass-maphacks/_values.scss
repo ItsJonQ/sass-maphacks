@@ -1,0 +1,9 @@
+// _values
+
+@function _values($map) {
+  @if type-of($map) != "map" {
+    @error "_values: The argument must be a map.";
+  }
+
+  @return map-values($map);
+}

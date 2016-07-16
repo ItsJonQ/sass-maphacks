@@ -1,0 +1,65 @@
+// Test :: _has
+
+@import "true";
+@import "./scss/sass-maphacks/has";
+
+@include test-module("_has") {
+
+  @include test("should correctly identify existing value of flat map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _has($map, b);
+    $expect: true;
+
+    @include assert-equal($test, $expect, "true");
+  }
+
+  @include test("should correctly identify non-existing value of flat map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _has($map, c);
+    $expect: false;
+
+    @include assert-equal($test, $expect, "false");
+  }
+
+  @include test("should correctly identify existing value of nested map") {
+    $map: (
+      a: 1,
+      b: 2,
+      c: (
+        d: (
+          e: 3
+        )
+      )
+    );
+
+    $test: _has($map, c, d, e);
+    $expect: true;
+
+    @include assert-equal($test, $expect, "true");
+  }
+
+  @include test("should correctly identify non-existing value of nested map") {
+    $map: (
+      a: 1,
+      b: 2,
+      c: (
+        d: (
+          e: 3
+        )
+      )
+    );
+
+    $test: _has($map, c, d, f);
+    $expect: false;
+
+    @include assert-equal($test, $expect, "false");
+  }
+}

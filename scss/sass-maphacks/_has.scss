@@ -1,0 +1,21 @@
+// _has
+// Source:
+// https://www.sitepoint.com/extra-map-functions-sass/
+
+@function _has($map, $keys...) {
+  @if type-of($map) != "map" {
+    @error "_has: The first argument must be a map.";
+  }
+  @if not nth($keys, 1) {
+    @error "_has: The second argument (key) must be defined.";
+  }
+
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+}

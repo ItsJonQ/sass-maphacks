@@ -2,6 +2,10 @@
 
 An Underscore/Lodash-like utility library for Sass maps
 
+## Update
+
+Lol, nevermind! Just discovered (Sass Dash)[https://github.com/davidkpiano/sassdash]. Might be better to use that instead :).
+
 ## Install
 ```
 npm install sass-maphacks --save-dev
@@ -64,10 +68,15 @@ $color: (
 - _extend
 - _first
 - _get
+- _has
 - _indexOf
+- _isList
 - _isMap
+- _keys
 - _last
 - _set
+- _values
+- _zip
 
 More functions + docs coming soon ❤️
 
@@ -75,3 +84,8 @@ More functions + docs coming soon ❤️
 ## License
 
 MIT © [Jon Q](https://jonquach.com)
+
+
+## Thanks
+
+A huge thanks to [Hugo Giraudel](http://hugogiraudel.com/) for his awesome + inspiration work with Sass things!

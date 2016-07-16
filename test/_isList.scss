@@ -1,0 +1,25 @@
+// Test :: _isList
+
+@import "true";
+@import "./scss/sass-maphacks/isList";
+
+@include test-module("_isList") {
+
+  @include test("should correctly identify list") {
+    $list: (a, b);
+
+    $test: _isList($list);
+    $expect: true;
+
+    @include assert-equal($test, $expect, "true");
+  }
+
+  @include test("should correctly identify non-list") {
+    $not-list: 1;
+
+    $test: _isList($not-list);
+    $expect: false;
+
+    @include assert-equal($test, $expect, "false");
+  }
+}

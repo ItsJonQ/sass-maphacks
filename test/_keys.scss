@@ -1,0 +1,19 @@
+// Test :: _keys
+
+@import "true";
+@import "./scss/sass-maphacks/keys";
+
+@include test-module("_keys") {
+
+  @include test("should get keys from map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _keys($map);
+    $expect: a, b;
+
+    @include assert-equal($test, $expect, "a, b");
+  }
+}

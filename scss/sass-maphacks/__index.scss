@@ -1,9 +1,15 @@
 // __index
 
-@import "get";
-@import "extend";
+@import "concat";
 @import "first";
+@import "extend";
+@import "get";
+@import "has";
 @import "indexOf";
-@import "last";
+@import "isList";
 @import "isMap";
+@import "keys";
+@import "last";
 @import "set";
+@import "values";
+@import "zip";

@@ -1,0 +1,19 @@
+// Test :: _has
+
+@import "true";
+@import "./scss/sass-maphacks/get";
+@import "./scss/sass-maphacks/zip";
+
+@include test-module("_zip") {
+
+  @include test("should create a map from 2 list") {
+    $keys: (a, b, c);
+    $values: (1, 2, 3);
+
+    $map: _zip($keys, $values);
+    $test: _get($map, b);
+    $expect: 2;
+
+    @include assert-equal($test, $expect, "2");
+  }
+}
