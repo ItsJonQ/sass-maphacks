@@ -1,6 +1,6 @@
 {
   "name": "sass-maphacks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A underscore/lodash like utility library for Sass maps",
   "main": "index.js",
   "homepage": "https://github.com/itsjonq/sass-maphacks",
