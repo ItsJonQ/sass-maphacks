@@ -42,4 +42,15 @@ If you wish to manually import and use indivdual functions in your code base (in
 }
 ```
 
+## Functions
+
+- _concat
+- _extend
+- _first
+- _get
+- _indexOf
+- _isMap
+- _last
+- _set
+
 More docs coming soon ❤️
