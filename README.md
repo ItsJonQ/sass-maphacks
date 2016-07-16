@@ -2,9 +2,9 @@
 
 An Underscore/Lodash-like utility library for Sass maps
 
-## Update
+# Update
 
-Lol, nevermind! Just discovered (Sass Dash)[https://github.com/davidkpiano/sassdash]. Might be better to use that instead :).
+Lol, nevermind! Just discovered [Sass Dash](https://github.com/davidkpiano/sassdash). Might be better to use that instead :).
 
 ## Install
 ```
