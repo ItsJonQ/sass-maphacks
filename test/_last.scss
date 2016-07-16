@@ -1,7 +1,7 @@
 // _last :: Test
 
 @import "true";
-@import "./scss/sass-maphacks/functions/last";
+@import "./scss/sass-maphacks/last";
 
 @include test-module("_last") {
 

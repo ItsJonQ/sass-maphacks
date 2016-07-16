@@ -1,7 +1,7 @@
 // _indexOf :: Test
 
 @import "true";
-@import "./scss/sass-maphacks/functions/indexOf";
+@import "./scss/sass-maphacks/indexOf";
 
 @include test-module("_indexOf") {
   @include test("should return index of 1") {
