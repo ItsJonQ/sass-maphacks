@@ -1,4 +1,4 @@
-# sass-maphacks [![Build Status](https://travis-ci.org/ItsJonQ/sass-maphacks.svg?branch=master)](https://travis-ci.org/ItsJonQ/sass-maphacks)
+# sass-maphacks [![Build Status](https://travis-ci.org/ItsJonQ/sass-maphacks.svg?branch=master)](https://travis-ci.org/ItsJonQ/sass-maphacks) ![Coverage](https://img.shields.io/badge/coverage-100%25-green.svg)
 
 ## Install
 ```
@@ -53,4 +53,4 @@ If you wish to manually import and use indivdual functions in your code base (in
 - _last
 - _set
 
-More docs coming soon ❤️
+More functions + docs coming soon ❤️
