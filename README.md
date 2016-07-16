@@ -38,7 +38,7 @@ If you wish to manually import and use indivdual functions in your code base (in
 @import "sass-maphacks/get";
 
 .my-awesome-class {
-  color: get($color, primary, blue);
+  color: _get($color, primary, blue);
 }
 ```
 
