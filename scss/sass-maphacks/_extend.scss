@@ -8,7 +8,7 @@
   }
   $first: nth($maps, 1);
   @if type-of($first) != "map" {
-    @error "_extend: The second argument must also be a map.";
+    @error "_extend: The second argument must be a map.";
   }
   $last: nth($maps, -1);
   // Deep is disabled by default
@@ -19,6 +19,10 @@
   @for $i from 1 through $max {
     // Store current map
     $current: nth($maps, $i);
+
+    @if type-of($current) != "map" {
+      @error "_extend: Arguments must be a map.";
+    }
 
     // If not in deep mode, simply merge current map with map
     @if not $deep {

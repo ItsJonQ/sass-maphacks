@@ -1,0 +1,19 @@
+// _concat
+
+@function _concat($map, $maps...) {
+  $first: nth($maps, 1);
+  @if type-of($map) != "map" {
+    @error "_concat: The first argument must be a map.";
+  }
+  @if type-of($first) != "map" {
+    @error "_concat: The second argument must be a map.";
+  }
+  $concat: ();
+  @each $map in $maps {
+    @if type-of($map) != "map" {
+      @error "_concat: Arguments must be a map";
+    }
+    $concat: map-merge($concat, $map);
+  }
+  @return $concat;
+}

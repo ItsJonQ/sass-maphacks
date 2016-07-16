@@ -1,0 +1,61 @@
+// Test :: _concat
+
+@import "true";
+@import "./scss/sass-maphacks/concat";
+@import "./scss/sass-maphacks/get";
+
+@include test-module("_concat") {
+
+  @include test("should concatenated simple maps correctly") {
+    $map1: (
+      a: 1
+    );
+    $map2: (
+      b: 2
+    );
+
+    $test_map: _concat($map1, $map2);
+    $test: _get($test_map, b);
+    $expect: 2;
+
+    @include assert-equal($test, $expect, "2");
+  }
+
+  @include test("should concatenated deep map correctly") {
+    $map1: (
+      a: 1,
+      c: 3
+    );
+    $map2: (
+      b: 2,
+      d: (
+        e: 4
+      )
+    );
+
+    $test_map: _concat($map1, $map2);
+    $test: _get($test_map, d, e);
+    $expect: 4;
+
+    @include assert-equal($test, $expect, "4");
+  }
+
+  @include test("should concatenated maps with same values") {
+    $map1: (
+      a: 1,
+      b: 2
+    );
+    $map2: (
+      b: 3,
+      d: (
+        e: 4
+      )
+    );
+
+    $test_map: _concat($map1, $map2);
+    $test: _get($test_map, b);
+    $expect: 3;
+
+    @include assert-equal($test, $expect, "3");
+  }
+}

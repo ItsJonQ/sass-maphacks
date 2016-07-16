@@ -5,6 +5,11 @@
   @if type-of($map) != "map" {
     @error "_set: The argument must be a map.";
   }
+  $first-key: nth($keys, 1);
+
+  @if not $first-key {
+    @error "_set: The second argument (key) must be defined.";
+  }
 
   $map-list: ($map,);
   $result: null;

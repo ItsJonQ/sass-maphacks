@@ -1,9 +1,21 @@
-// _get :: Test
+// Test :: _get
 
 @import "true";
 @import "./scss/sass-maphacks/get";
 
 @include test-module("_get") {
+
+  @include test("should get value of flat map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _get($map, b);
+    $expect: 2;
+
+    @include assert-equal($test, $expect, "2");
+  }
 
   @include test("should get value of nested map") {
     $map: (
@@ -20,4 +32,3 @@
     @include assert-equal($test, $expect, "2");
   }
 }
-
