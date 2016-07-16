@@ -1,0 +1,28 @@
+// Test :: _isMap
+
+@import "true";
+@import "./scss/sass-maphacks/isMap";
+
+@include test-module("_isMap") {
+
+  @include test("should correctly identify map") {
+    $map: (
+      a: 1,
+      b: 2
+    );
+
+    $test: _isMap($map);
+    $expect: true;
+
+    @include assert-equal($test, $expect, "true");
+  }
+
+  @include test("should correctly identify non-map") {
+    $not-map: 1;
+
+    $test: _isMap($not-map);
+    $expect: false;
+
+    @include assert-equal($test, $expect, "false");
+  }
+}

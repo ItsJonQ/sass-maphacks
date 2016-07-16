@@ -20,10 +20,6 @@
     // Store current map
     $current: nth($maps, $i);
 
-    @if type-of($current) != "map" {
-      @error "_extend: Arguments must be a map.";
-    }
-
     // If not in deep mode, simply merge current map with map
     @if not $deep {
       $map: map-merge($map, $current);
