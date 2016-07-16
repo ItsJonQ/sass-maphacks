@@ -1,9 +1,11 @@
 // _indexOf
 
 @function _indexOf($map: false, $key: false) {
-  // Return if $map or $key is invalid
-  @if $map == false or $key == false {
-    @return false;
+  @if type-of($map) != "map" {
+    @error "_indexOf: The argument must be a map.";
+  }
+  @if $key == false {
+    @error "_indexOf: The second argument must be defined.";
   }
   // Starting index
   $index: 1;

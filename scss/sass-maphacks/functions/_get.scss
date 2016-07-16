@@ -1,7 +1,10 @@
-// Functions :: _get
+// _get
 // Source:
 // https://www.sitepoint.com/extra-map-functions-sass/
 @function _get($map, $keys...) {
+  @if type-of($map) != "map" {
+    @error "_get: The argument must be a map.";
+  }
   @each $key in $keys {
     $map: map-get($map, $key);
   }

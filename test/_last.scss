@@ -1,7 +1,7 @@
 // _last :: Test
 
 @import "true";
-@import "./scss/functions/last";
+@import "./scss/sass-maphacks/functions/last";
 
 @include test-module("_last") {
 
@@ -17,4 +17,3 @@
     @include assert-equal($test, $expect, "second");
   }
 }
-

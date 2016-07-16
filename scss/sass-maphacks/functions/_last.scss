@@ -1,11 +1,11 @@
-// Functions :: _last
+// _last
 
 @function _last($map: false) {
+  @if type-of($map) != "map" {
+    @error "_last: The argument must be a map.";
+  }
   @if ($map) {
     $keys: map-keys($map);
     @return map-get($map, nth($keys, length($keys)));
-  }
-  @else {
-    @warn "The map passed is not valid.";
   }
 };

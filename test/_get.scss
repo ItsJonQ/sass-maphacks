@@ -1,7 +1,7 @@
 // _get :: Test
 
 @import "true";
-@import "./scss/functions/get";
+@import "./scss/sass-maphacks/functions/get";
 
 @include test-module("_get") {
 

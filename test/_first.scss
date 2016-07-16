@@ -1,7 +1,7 @@
 // _first :: Test
 
 @import "true";
-@import "./scss/functions/first";
+@import "./scss/sass-maphacks/functions/first";
 
 @include test-module("_first") {
 

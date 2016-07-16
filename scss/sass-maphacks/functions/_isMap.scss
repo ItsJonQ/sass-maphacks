@@ -1,7 +1,7 @@
 // _isMap
 
 @function _isMap($map: false) {
-  @if ($map and typeof($map) == "map") {
+  @if ($map and type-of($map) == "map") {
     @return true;
   }
   @else {

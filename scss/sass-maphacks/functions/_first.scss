@@ -1,11 +1,11 @@
 // _first
 
 @function _first($map: false) {
+  @if type-of($map) != "map" {
+    @error "_first: The argument must be a map.";
+  }
   @if ($map) {
     $keys: map-keys($map);
     @return map-get($map, nth($keys, 1));
-  }
-  @else {
-    @warn "The map passed is not valid.";
   }
 };
