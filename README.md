@@ -1,4 +1,4 @@
-# sass-maphacks [![Build Status](https://travis-ci.org/ItsJonQ/sass-maphacks.svg?branch=master)](https://travis-ci.org/ItsJonQ/sass-maphacks) [![npm version](https://badge.fury.io/js/sass-maphacks.svg)](https://badge.fury.io/js/sass-maphacks) ![Coverage](https://img.shields.io/badge/coverage-100%25-green.svg) [![Dependency Status](https://david-dm.org/itsjonq/sass-maphacks.svg)](https://david-dm.org/itsjonq/sass-maphacks)
+# sass-maphacks [![Build Status](https://travis-ci.org/ItsJonQ/sass-maphacks.svg?branch=master)](https://travis-ci.org/ItsJonQ/sass-maphacks) [![npm version](https://badge.fury.io/js/sass-maphacks.svg)](https://badge.fury.io/js/sass-maphacks) ![Coverage](https://img.shields.io/badge/coverage-100%25-green.svg) [![devDependency Status](https://david-dm.org/itsjonq/sass-maphacks/dev-status.svg)](https://david-dm.org/itsjonq/sass-maphacks#info=devDependencies)
 
 An Underscore/Lodash-like utility library for Sass maps
 
