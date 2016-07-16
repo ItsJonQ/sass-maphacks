@@ -54,3 +54,8 @@ If you wish to manually import and use indivdual functions in your code base (in
 - _set
 
 More functions + docs coming soon ❤️
+
+
+## License
+
+MIT © [Jon Q](https://jonquach.com)
